@@ -1,3 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .background-pattern{
+        @apply bg-primary-white text-primary-brown;
+        background-size: 4px 4px;
+        background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+                          linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+        box-shadow: inset 0 0 150px rgba(77, 73, 62, .4), inset 0 0 150px rgba(77, 73, 62, .3);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .border-pattern {
+        height: 40px;
+        background-size: 50px 3px, 
+          50px 1px, 50px 1px, 50px 1px, 50px 1px,
+          50px 1px, 50px 1px, 50px 1px, 50px 1px;
+        background-position: 0 0, 
+          22px 4px, 22px 5px, 22px 6px, 22px 7px,
+          28px 12px, 28px 13px, 28px 14px, 28px 15px;
+        background-image: linear-gradient(90deg, #4D493E, #4D493E 10px, transparent 10px),
+          linear-gradient(90deg, 
+            rgba(77, 73, 62, .4), rgba(77, 73, 62, .4) 1px, 
+            rgba(77, 73, 62, .8) 1px, rgba(77, 73, 62, .8) 2px, 
+            rgba(77, 73, 62, .9) 2px, rgba(77, 73, 62, .9) 3px, 
+            rgba(77, 73, 62, .4) 3px, rgba(77, 73, 62, .4) 4px, 
+            transparent 4px, transparent 12px,
+            rgba(77, 73, 62, .4) 12px, rgba(77, 73, 62, .4) 13px,
+            rgba(77, 73, 62, .8) 13px, rgba(77, 73, 62, .8) 14px, 
+            rgba(77, 73, 62, .9) 14px, rgba(77, 73, 62, .9) 15px, 
+            rgba(77, 73, 62, .4) 15px, rgba(77, 73, 62, .4) 16px,
+            transparent 16px),
+          linear-gradient(90deg, 
+            rgba(77, 73, 62, .9), rgba(77, 73, 62, .9) 1px, 
+            rgba(77, 73, 62, 1) 1px, rgba(77, 73, 62, 1) 2px, 
+            rgba(77, 73, 62, 1) 2px, rgba(77, 73, 62, 1) 3px, 
+            rgba(77, 73, 62, .9) 3px, rgba(77, 73, 62, .9) 4px, 
+            transparent 4px, transparent 12px,
+            rgba(77, 73, 62, .9) 12px, rgba(77, 73, 62, .9) 13px,
+            rgba(77, 73, 62, 1) 13px, rgba(77, 73, 62, 1) 14px, 
+            rgba(77, 73, 62, 1) 14px, rgba(77, 73, 62, 1) 15px, 
+            rgba(77, 73, 62, .9) 15px, rgba(77, 73, 62, .9) 16px,
+            transparent 16px),
+          linear-gradient(90deg, 
+            rgba(77, 73, 62, .9), rgba(77, 73, 62, .9) 1px, 
+            rgba(77, 73, 62, 1) 1px, rgba(77, 73, 62, 1) 2px, 
+            rgba(77, 73, 62, 1) 2px, rgba(77, 73, 62, 1) 3px, 
+            rgba(77, 73, 62, .9) 3px, rgba(77, 73, 62, .9) 4px, 
+            transparent 4px, transparent 12px,
+            rgba(77, 73, 62, .9) 12px, rgba(77, 73, 62, .9) 13px,
+            rgba(77, 73, 62, 1) 13px, rgba(77, 73, 62, 1) 14px, 
+            rgba(77, 73, 62, 1) 14px, rgba(77, 73, 62, 1) 15px, 
+            rgba(77, 73, 62, .9) 15px, rgba(77, 73, 62, .9) 16px,
+            transparent 16px),
+          linear-gradient(90deg, 
+            rgba(77, 73, 62, .4), rgba(77, 73, 62, .4) 1px, 
+            rgba(77, 73, 62, .8) 1px, rgba(77, 73, 62, .8) 2px, 
+            rgba(77, 73, 62, .9) 2px, rgba(77, 73, 62, .9) 3px, 
+            rgba(77, 73, 62, .4) 3px, rgba(77, 73, 62, .4) 4px, 
+            transparent 4px, transparent 12px,
+            rgba(77, 73, 62, .4) 12px, rgba(77, 73, 62, .4) 13px,
+            rgba(77, 73, 62, .8) 13px, rgba(77, 73, 62, .8) 14px, 
+            rgba(77, 73, 62, .9) 14px, rgba(77, 73, 62, .9) 15px, 
+            rgba(77, 73, 62, .4) 15px, rgba(77, 73, 62, .4) 16px,
+            transparent 16px),
+          linear-gradient(90deg, 
+            rgba(77, 73, 62, .4), rgba(77, 73, 62, .4) 1px, 
+            rgba(77, 73, 62, .8) 1px, rgba(77, 73, 62, .8) 2px, 
+            rgba(77, 73, 62, .9) 2px, rgba(77, 73, 62, .9) 3px, 
+            rgba(77, 73, 62, .4) 3px, rgba(77, 73, 62, .4) 4px, 
+            transparent 4px),
+          linear-gradient(90deg, 
+            rgba(77, 73, 62, .9), rgba(77, 73, 62, .9) 1px, 
+            rgba(77, 73, 62, 1) 1px, rgba(77, 73, 62, 1) 2px, 
+            rgba(77, 73, 62, 1) 2px, rgba(77, 73, 62, 1) 3px, 
+            rgba(77, 73, 62, .9) 3px, rgba(77, 73, 62, .9) 4px, 
+            transparent 4px),
+          linear-gradient(90deg, 
+            rgba(77, 73, 62, .9), rgba(77, 73, 62, .9) 1px, 
+            rgba(77, 73, 62, 1) 1px, rgba(77, 73, 62, 1) 2px, 
+            rgba(77, 73, 62, 1) 2px, rgba(77, 73, 62, 1) 3px, 
+            rgba(77, 73, 62, .9) 3px, rgba(77, 73, 62, .9) 4px, 
+            transparent 4px),
+          linear-gradient(90deg, 
+            rgba(77, 73, 62, .4), rgba(77, 73, 62, .4) 1px, 
+            rgba(77, 73, 62, .8) 1px, rgba(77, 73, 62, .8) 2px, 
+            rgba(77, 73, 62, .9) 2px, rgba(77, 73, 62, .9) 3px, 
+            rgba(77, 73, 62, .4) 3px, rgba(77, 73, 62, .4) 4px, 
+            transparent 4px);
+        background-repeat: repeat-x;
+    }
+}

@@ -1,11 +1,18 @@
 import React, { FC } from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from 'react-dom/client';
+import AppContainer from "./components/containers/AppContainer";
 
 const App: FC = () => {
     return (
-        <h1 className="text-3xl font-bold underline">React component</h1>
-        //<h1 className="text-3xl font-bold underline">
+        <AppContainer>
+            <h1 className="drop-shadow-title">Que dice la xica</h1>
+            <h1>Que dice la xica</h1>
+            <p>Que dice la xica</p>
+            <p>Que dice la xica</p>
+        </AppContainer>
     )
 }
 
-ReactDOM.render(<App />, document.getElementById("root"))
+const container:HTMLElement|null = document.getElementById('root');
+const root = createRoot(container!);
+root.render(<App />);
