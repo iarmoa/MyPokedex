@@ -1,0 +1,12 @@
+[
+    {
+        "id": "index",
+        "displayName": "PokeDex",
+        "route": "/"
+    },
+    {
+        "id": "source",
+        "displayName": "Source",
+        "route": "/"
+    }
+]

@@ -25,7 +25,8 @@
     "noUncheckedIndexedAccess": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "checkJs": true
+    "checkJs": true,
+    "resolveJsonModule": true
   },
   "exclude": [
     "./built/**/*"

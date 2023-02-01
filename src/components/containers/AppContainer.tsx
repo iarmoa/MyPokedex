@@ -1,4 +1,7 @@
 import React from "react";
+import Navbar from "../navbar/Navbar";
+
+import menu from "../../configs/menu.json";
 
 interface Props {
     children: React.ReactNode
@@ -6,14 +9,21 @@ interface Props {
 
 const AppContainer = ({ children }: Props): JSX.Element => {
     return (
-        <div className="background-pattern w-full min-h-screen">
-            <div className="mt-4 border-t-2 w-full border-primary-brown border-solid">
+        <div className="min-h-screen w-full flex flex-col items-stretch bg-primary-white">
+            <div className="mb-5 px-2 md:px-16">
+                <Navbar menu={menu}/>
+            </div>
+            <div className="border-t-2 w-full border-primary-brown border-solid">
                 <div className="py-0 px-16 w-full">
                     <div className="border-pattern"></div>
                 </div>
             </div>
-            {children}
-            <div className="mt-4 border-t-2 w-full border-primary-brown border-solid absolute inset-x-0 bottom-0">
+
+            <div className="mt-0 px-2 md:px-16 grow flex flex-col items-stretch">
+                {children}
+            </div>
+
+            <div className="border-t-2 w-full mt-5 border-primary-brown border-solid">
                 <div className="py-0 px-16 w-full">
                     <div className="border-pattern"></div>
                 </div>

@@ -1,14 +1,12 @@
 import React, { FC } from "react";
 import { createRoot } from 'react-dom/client';
 import AppContainer from "./components/containers/AppContainer";
+import Main from "./components/pages/Main";
 
 const App: FC = () => {
     return (
         <AppContainer>
-            <h1 className="drop-shadow-title">Que dice la xica</h1>
-            <h1>Que dice la xica</h1>
-            <p>Que dice la xica</p>
-            <p>Que dice la xica</p>
+            <Main />
         </AppContainer>
     )
 }
