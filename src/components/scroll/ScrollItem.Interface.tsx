@@ -1,5 +1,5 @@
 export default interface ScrollItem{
-    id: string;
+    id: number;
     displayName: string;
     displayIcon?: React.ReactNode;
 }

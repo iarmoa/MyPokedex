@@ -27,20 +27,25 @@ module.exports = {
         'secondary': {
           'white': '#FFFFFF',
         },
-        'transparent': 'transparent'
+        'transparent': 'transparent',
       }
     },
     fontFamily: {
-      sans: ['Open Sans', 'sans-serif'],
-      heading: ['Open Sans', 'sans-serif']
+      sans: ['Poppins', 'sans-serif'],
+      heading: ['Poppins', 'sans-serif']
     },
     fontWeight:{
       normal: '300',
       medium: '400',
       bold: '500'
     },
+    fontSize: {
+      sm: '.8 rem',
+      base: '1.2rem',
+      lg: '1.3rem'
+    },
     letterSpacing: {
-      normal: '.1rem'
+      normal: '0.1rem'
     }
   },
   plugins: [

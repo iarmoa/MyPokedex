@@ -19,7 +19,7 @@ const AppContainer = ({ children }: Props): JSX.Element => {
                 </div>
             </div>
 
-            <div className="mt-0 px-2 md:px-16 grow flex flex-col items-stretch">
+            <div className="mt-0 px-2 md:px-16 grow flex flex-col max-w-full max-h-[80%]">
                 {children}
             </div>
 
